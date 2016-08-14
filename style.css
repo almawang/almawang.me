@@ -1,0 +1,140 @@
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight:500;
+}
+p {
+  font-size: 20px;
+  font-weight: 100;
+}
+body {
+  font-family: 'Gill Sans';
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  padding: 0;
+}
+a{
+  transition-property: all;
+  transition-duration: .3s;
+  color: black;
+  text-decoration:none
+}
+a:visited {
+  text-decoration: none
+}
+a:hover {
+  color: green;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: rgba(0,179,107,.8);
+  width: 100%;
+  float: left;
+  color: white;
+}
+nav div {
+  margin: auto;
+  margin-left: 20px;
+  text-align: center;
+}
+nav li {
+  margin: 10px;
+}
+
+.cover {
+  background-image: url(images/background.jpg);
+  background-size: cover;
+}
+
+.links {
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.proj {
+  margin: 1rem;
+  border-radius: 5px;
+  border: 1px solid darkgrey;
+  padding: 1rem;
+}
+.proj a {
+  margin: auto;
+}
+
+@keyframes overlay {
+  0% {
+    background-color: transparent;
+    color: transparent;
+    text-shadow: none;
+  }
+}
+
+#intro {
+  animation-name: overlay;
+  animation-duration: 3s;
+  background-color: rgba(100%, 100%, 100%, .2);
+  height: inherit;
+}
+#intro h1 {
+  animation-name: overlay;
+  animation-duration: 3s;
+  margin-top: 200px;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-family: 'Poiret One', cursive;
+  font-size: 60px;
+}
+
+#aboutme {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+ #aboutme div {
+   width: 480px;
+   margin-right: 40px;
+ }
+
+#aboutme, #projects, #intro, #experiences {
+  padding: 70px;
+  height: 650px;
+}
+
+#aboutme {
+  height: 400px;
+}
+
+#experiences {
+  display: flex;
+  flex-flow: column;
+}
+
+#work {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+#work div {
+  width: 20rem;
+  margin: 2rem;
+}
+#work h1 {
+  font-size: 30px;
+}
+
+#propic {
+  border-radius: 10px;
+}
+
+.proj h1{
+  font-size: 20px;
+}

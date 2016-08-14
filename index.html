@@ -1,36 +1,107 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Alma x CS52</title>
-    <style>
-    h1 {
-      color: #00664d;
-      font-family: "Gill Sans";
-      text-align: center;
-      font-size: 50px;
-      font-weight:500;
-    }
-    p {
-      font-family: "Gill Sans";
-      padding-left: 50px;
-      color: #206040;
-      font-size: 20px;
-      font-weight: 100;
-    }
-    body {
-      background-color: #d2a679;
-    }
-    a:link  {color:#206040; text-decoration:none}
-    a:visited {color:#206040; text-decoration: none}
-    a:hover {text-decoration: underline}
-    </style>
+    <title>Alma Wang</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
   </head>
-
   <body>
-    <h1>Alma's CS 52 Webpage</h1>
-    <center>
-      <p> Hi! My name is Alma. My interests include <a href="https://www.instagram.com/almaeats/">eating food</a> and spending time outside.</p>
-      <marquee scrollamount="20"><img src="images/HelloWorld.jpg"></marquee>
-    </center>
+    <nav id="navbar">
+      <div>
+        <a href="#">Alma Wang</a>
+      </div>
+      <ul class="links">
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cover">
+      <div id="intro">
+        <h1>Alma Wang<br>
+          Dartmouth '18</h1>
+      </div>
+    </div>
+    <div id="aboutme">
+      <div>
+        <h1>About Me</h1>
+        <p> I am currently a Computer Science and Economics double major and Applied Mathematics minor at Dartmouth
+          College with an interest in all things quantitative.
+        </p>
+      </div>
+      <img id="propic" src="images/propic.jpg" alt="Profile Picture" height="381" width="480" />
+    </div>
+    <div id="experiences">
+      <h1>Experiences</h1>
+      <div id="work">
+        <div>
+          <h1>Smart Women Securities</h1>
+          <img src="images/smart-woman-securities.jpg" alt="SWS Logo"/>
+          <ul>
+            <li>Led groups of 3-5 members in developing termly stock pitch presentations.</li>
+            <li>Used evaluation of comparables to allocate Technology industry stocks in the Dartmouth SWS chapter's virtual portfolio ins
+              weekly investment board meetings.</li>
+          </ul>
+        </div>
+        <div>
+          <h1>Dartmouth Panhellenic Council</h1>
+          <img src="images/panhell.png" alt="Panhell Logo"/>
+          <ul>
+            <li>Correspond on a weekly basis with financial officers of all eight
+              sororities to assess financial need of each house for scholarship
+              allocation totaling several thousand dollars.</li>
+            <li>Appraise strategies for shaping Dartmouth's sorority system as a positive force on campus,
+              impacting over 60% of female undergraduates.</li>
+          </ul>
+        </div>
+        <div>
+          <h1>East Wheelock Snack Bar</h1>
+          <img src="images/ddslogo.jpeg" alt="SnackBar Logo"/>
+          <ul>
+            <li>Co-managed over 40 student employees to operate on campus Snack Bars serving hundreds of students on a
+               weekly basis.</li>
+            <li>Integrated cloud based group emails with existing substitute finding system to increase probability
+              of finding a substitute employee.</li>
+            <li>Forecast students' purchasing habits on hundreds of items based on change in item stock
+              and campus events to produce weekly product orders.
+          </ul>
+        </div>
+        <div>
+          <h1>iD Tech</h1>
+          <img src="images/idtech.jpg" alt="iD Tech Logo"/>
+          <ul>
+            <li>Instructed 13 to 17 year olds in a one-week course in Java Programming with Object
+              Oriented Programming. Facilitated design of final
+              projects.</li>
+            <li>Co-instructed a Game Design course focused on player experience.</li>
+            <li>Administered technical support and projected supply needs for over a hundred campers in the camp's first year of operation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="projects">
+      <h1>Projects</h1>
+      <div class="proj">
+        <h1>2048 Solver</h1>
+        <a href="https://github.com/almawang/2048SolverProject">GitHub</a>
+        <p>Final project for my articial intelligence class including code and and pdf providing analysis of performance.
+          The project models and displays the 2048 game as well as employing different player strategies to solving 2048.
+          Primarily focuses on alpha beta pruning to determine moves. Includes options for higher goal (i.e. 4096, ect).</p>
+      </div>
+      <div class="proj">
+        <h1>Personal Website</h1>
+        <a href="https://github.com/almawang/almawang.me">GitHub</a>
+        <p>Design and code for this website available on GitHub. Coded and styled with HTML and CSS.</p>
+      </div>
+    </div>
+    <footer id="contact">
+      <ul class="links">
+        <li><a href="mailto:almawang96@gmail.com">Email <i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/alma-wang-086a31b6">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/almawang">GitHub <i class="fa fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+    </footer>
   </body>
 </html>
