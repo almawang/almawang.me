@@ -120,7 +120,7 @@ nav li {
 #work {
   display: flex;
   flex-flow: row;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 #work div {
