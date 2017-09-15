@@ -112,24 +112,28 @@ nav li {
   font-size: 60px;
 }
 
-#aboutme {
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-}
- #aboutme div {
-   width: 480px;
-   margin-right: 40px;
- }
-
 #aboutme, #projects, #intro, #experiences {
   padding: 70px;
   height: 650px;
 }
 
 #aboutme {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
   height: 400px;
 }
+
+@media screen and (max-width: 1140px) {
+  #aboutme {
+    flex-flow: column;
+  }
+}
+
+ #aboutme div {
+   width: 480px;
+   margin-right: 40px;
+ }
 
 #experiences {
   display: flex;
